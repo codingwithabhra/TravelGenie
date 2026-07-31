@@ -16,7 +16,7 @@ const Content = () => {
   const fetchTrip = async () => {
     try {
       const response = await axios.get(
-        "https://ai-app-backend-beta.vercel.app/api/travel-plan?city=rome&country=italy&days=3",
+        "https://ai-app-backend-beta.vercel.app/api/travel-plan",
       );
       setTrip(response.data.data);
       console.log("Trip data--", response.data.data);
