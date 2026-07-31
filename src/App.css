@@ -1,0 +1,36 @@
+.homeParent {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-sidebar {
+    flex: 0 0 16%;
+    height: 100vh;
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+.home-content {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.home-content::-webkit-scrollbar {
+    width: 0;
+}
+
+.home-content {
+    scrollbar-width: none;
+}

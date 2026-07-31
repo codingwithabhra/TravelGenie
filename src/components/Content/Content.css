@@ -1,0 +1,158 @@
+.destination {
+    margin-bottom: 30px;
+}
+
+.destination h1 {
+    color: #66CDAA;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.destination p {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.timetovisit-duration {
+
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.timetovisit,
+.duration {
+    flex: 1;
+    background-color: #40997b;
+    padding: 15px 30px;
+}
+
+.timetovisit h4,
+.duration h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.duration p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.topAttractions,
+.tripItinerary, .budget, .localTips {
+    margin: 40px 0;
+    padding: 15px 30px;
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.topAttractions ul li {
+    list-style: none;
+}
+
+.must-visit-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 100%;
+    min-height: 80px;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(102, 205, 170, .25);
+
+    transition: .3s;
+}
+
+.must-visit-card:hover {
+    border-color: #66CDAA;
+    transform: translateY(-4px);
+}
+
+.must-visit-card .icon {
+    color: #66CDAA;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.must-visit-card p {
+    margin: 0;
+    color: white;
+}
+
+/*----itinerary----*/
+
+.itinerary-card {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 10px;
+
+    height: 100%;
+    min-height: 50px;
+
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    background: rgb(52, 145, 114);
+    color: #fff;
+}
+
+.itinerary-card h5{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/*-----local tips-----*/
+.localtip-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 100%;
+    min-height: 50px;
+
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    background: rgb(52, 145, 114);
+    color: #fff;
+}
+
+.localTips h6{
+    background-color: #2e8266;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+
+/*----------------MEDIA QUERY ----------------*/
+@media (max-width: 768px) {
+    .timetovisit-duration {
+        flex-direction: column;
+    }
+
+    .timetovisit {
+        border-right: none;
+        border-bottom: 2px solid #fff;
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}

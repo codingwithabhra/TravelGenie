@@ -1,0 +1,64 @@
+.tripPlannerForm {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 45px 40px;
+}
+
+.tripPlannerForm h1 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tripPlannerForm hr {
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.tripPlannerForm button {
+    background-color: #40997b !important;
+}
+
+.tripPlannerForm .form-select {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(102, 205, 170, 0.4);
+    color: #fff;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.tripPlannerForm .form-select:focus {
+    border-color: #66CDAA;
+    box-shadow: 0 0 0 0.2rem rgba(102, 205, 170, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.tripPlannerForm .form-select option {
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.tripPlannerForm .form-select:disabled {
+    opacity: 0.6;
+}
+
+.tripPlannerForm .form-select:hover {
+    border-color: #66CDAA;
+}
+
+.tripPlannerForm .form-select:invalid {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tripPlannerForm .form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M3.204 5h9.592L8 10.481 3.204 5z'/%3E%3C/svg%3E");
+}
