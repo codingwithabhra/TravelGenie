@@ -17,15 +17,21 @@
 
     margin: 5px 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
 }
 
 .timetovisit,
 .duration {
-    flex: 1;
+    /* flex: 1;
     background-color: #40997b;
-    padding: 15px 30px;
+    padding: 15px 30px; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #40997b;
 }
 
 .timetovisit h4,
@@ -41,7 +47,9 @@
 }
 
 .topAttractions,
-.tripItinerary, .budget, .localTips {
+.tripItinerary,
+.budget,
+.localTips {
     margin: 40px 0;
     padding: 15px 30px;
     /* Glassmorphism */
@@ -97,7 +105,7 @@
 
 .itinerary-card {
     display: flex;
-    
+
     flex-direction: column;
     gap: 10px;
 
@@ -111,13 +119,13 @@
     color: #fff;
 }
 
-.itinerary-card h5{
+.itinerary-card h5 {
     font-weight: 700;
     font-size: 1.3rem;
 }
 
 /*-----local tips-----*/
-.localtip-card{
+.localtip-card {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -132,7 +140,7 @@
     color: #fff;
 }
 
-.localTips h6{
+.localTips h6 {
     background-color: #2e8266;
     color: white;
     padding: 10px 15px;

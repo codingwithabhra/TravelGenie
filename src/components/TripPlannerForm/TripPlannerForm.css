@@ -23,7 +23,14 @@
 }
 
 .tripPlannerForm .form-select {
-    background: rgba(255, 255, 255, 0.08);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: rgba(255, 255, 255, 0.08)  url("/down.png") no-repeat right 12px center;
+    background-size: 14px;
+
+
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -57,8 +64,4 @@
 
 .tripPlannerForm .form-select:invalid {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.tripPlannerForm .form-select {
-  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M3.204 5h9.592L8 10.481 3.204 5z'/%3E%3C/svg%3E");
 }
