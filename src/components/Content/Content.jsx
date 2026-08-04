@@ -37,7 +37,7 @@ const Content = () => {
 
   return (
     <div className="content container-fluid">
-      <div className="mx-5">
+      <div className="content-margin">
         <TripComponent trip={trip} />
       </div>
     </div>

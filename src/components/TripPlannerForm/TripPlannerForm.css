@@ -27,7 +27,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background: rgba(255, 255, 255, 0.08)  url("/down.png") no-repeat right 12px center;
+    background: rgba(255, 255, 255, 0.08) url("/down.png") no-repeat right 12px center;
     background-size: 14px;
 
 
@@ -63,5 +63,30 @@
 }
 
 .tripPlannerForm .form-select:invalid {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*---------------RESPONSIVE-----------------*/
+
+
+@media (max-width: 768px) {
+    .tripPlannerForm h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .tripPlannerForm h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .tripPlannerForm h1 {
+        font-size: 1.7rem;
+    }
+
+    .tripPlannerForm h1 span{
+        margin-right: 8px!important;
+    }
 }

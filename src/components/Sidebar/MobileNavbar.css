@@ -1,0 +1,27 @@
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+#mobileNavbar {
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nav-link {
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background: rgba(102, 205, 170, .7);
+}

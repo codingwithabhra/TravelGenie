@@ -1,3 +1,23 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+/* Default (>=1200px) */
+.fullLogo {
+  max-width: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.logoIcon {
+  max-width: 60px;
+  object-fit: cover;
+  display: none;
+}
+
 .navbar {
   list-style: none;
   padding: 0;
@@ -17,10 +37,46 @@
 }
 
 .navLink:hover {
-  background-color: rgb(102, 205, 171); /* #66CDAA with transparency */
+  background-color: rgb(102, 205, 171);
+  /* #66CDAA with transparency */
   color: #fff !important;
 }
 
 .navLink:hover svg {
   color: #fff;
+}
+
+/*------------------RESPONSIVE-----------------------*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* Hide full logo */
+  .fullLogo {
+    display: none;
+  }
+
+  .logo {
+    padding: 15px 0;
+  }
+
+  /* Show logo icon */
+  .logoIcon {
+    display: block;
+    max-width: 60px;
+    padding: 8px;
+  }
+
+  .navLink {
+    justify-content: center;
+    padding: 14px 0;
+    gap: 0;
+  }
+
+  .navText {
+    display: none;
+  }
+
+  .navLink svg {
+    font-size: 24px;
+  }
 }

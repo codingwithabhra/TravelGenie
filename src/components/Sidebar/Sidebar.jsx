@@ -8,27 +8,34 @@ const Sidebar = () => {
   return (
     <div>
       <div className="logo">
+        {/* Full Logo */}
         <img
           src="/TripGenie.png"
-          alt="Logo"
-          className="d-block m-auto py-4"
+          alt="TripGenie Logo"
+          className="fullLogo"
           style={{ maxWidth: "120px", objectFit: "cover" }}
         />
+
+        {/* Logo Icon */}
+        <img src="/logoIcon.png" alt="TripGenie Icon" className="logoIcon" />
       </div>
 
       <ul className="navbar">
         <li className="w-100">
           <Link className="navLink text-decoration-none text-white" to="/">
-            <IoIosHome size={21}/>
-            <span className="ms-2 fw-bold">Home</span>
+            <IoIosHome size={21} />
+            <span className="navText ms-2 fw-bold">Home</span>
           </Link>
         </li>
 
         {/* PLAN TRIP */}
         <li className="w-100">
-          <Link className="navLink text-decoration-none text-white" to="/planmytrip">
-            <FaPersonWalkingLuggage size={21}/>
-            <span className="ms-2 fw-bold">Plan my trip</span>
+          <Link
+            className="navLink text-decoration-none text-white"
+            to="/planmytrip"
+          >
+            <FaPersonWalkingLuggage size={21} />
+            <span className="navText ms-2 fw-bold">Plan my trip</span>
           </Link>
         </li>
       </ul>

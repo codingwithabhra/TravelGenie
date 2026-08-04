@@ -1,3 +1,8 @@
+.content-margin {
+    margin: 0 80px;
+}
+
+
 .destination {
     margin-bottom: 30px;
 }
@@ -6,6 +11,7 @@
     color: #66CDAA;
     font-weight: 600;
     font-size: 3rem;
+    margin-bottom: 0;
 }
 
 .destination p {
@@ -150,17 +156,95 @@
 
 
 /*----------------MEDIA QUERY ----------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .content-margin {
+        margin: 0 40px;
+    }
+
+    .destination h1 {
+        font-size: 2.7rem;
+    }
+
+    .destination p {
+        font-size: 2.7rem;
+    }
+
+    .duration p {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 768px) {
     .timetovisit-duration {
         flex-direction: column;
     }
 
-    .timetovisit {
-        border-right: none;
-        border-bottom: 2px solid #fff;
-        margin-right: 0;
-        padding-right: 0;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+    .content-margin {
+        margin: 0 40px;
+    }
+
+    .destination h1 {
+        font-size: 2.4rem;
+    }
+
+    .destination p {
+        font-size: 2.4rem;
+    }
+
+    .duration p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 640px) {
+
+     .destination h1 {
+        font-size: 2.1rem;
+    }
+
+    .destination p {
+        font-size: 2.1rem;
+    }
+
+    .duration p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+     .destination h1 {
+        font-size: 1.8rem;
+    }
+
+    .destination p {
+        font-size: 1.8rem;
+    }
+
+    .duration p {
+        font-size: 20px;
+    }
+
+    .localtip-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .localtip-card p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 515px) {
+
+    .destination{
+        display: flex;
+        flex-direction: column!important;
+    }
+
+    .destination p {
+        font-size: 2.3rem;
     }
 }

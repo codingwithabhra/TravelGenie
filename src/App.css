@@ -4,7 +4,7 @@
 }
 
 .home-sidebar {
-    flex: 0 0 16%;
+    flex: 0 0 14%;
     height: 100vh;
 
     /* Glassmorphism */
@@ -33,4 +33,36 @@
 
 .home-content {
     scrollbar-width: none;
+}
+
+/*---------------RESPONSIVE----------------*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .home-sidebar {
+        flex: 0 0 6%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .home-content {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .home-content {
+        margin-top: 70px;
+    }
+
+    .home-sidebar {
+        display: none;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
 }
