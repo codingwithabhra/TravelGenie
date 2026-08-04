@@ -215,6 +215,16 @@
 
 @media (max-width: 576px) {
 
+    .content-margin {
+        margin: 0 15px;
+    }
+
+    .destination{
+        display: flex;
+        justify-content: center!important;
+        align-items: center;
+    }
+
      .destination h1 {
         font-size: 1.8rem;
     }

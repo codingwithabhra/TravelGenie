@@ -55,6 +55,7 @@
 
     .home-content {
         margin-top: 70px;
+        margin-bottom: 15px;
     }
 
     .home-sidebar {
@@ -63,6 +64,7 @@
 
     .home-content {
         padding: 0;
+        padding-bottom: 50px!important;
     }
 
 }
